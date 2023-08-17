@@ -1,0 +1,65 @@
+root@ubuntu:~# -h now
+-h: command not found
+root@ubuntu:~# date
+Thu Aug 17 08:45:09 UTC 2023
+root@ubuntu:~# 
+root@ubuntu:~# echo hello
+hello
+root@ubuntu:~# exit
+logout
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ echo unuty = name, ubuntu host name
+unuty = name, ubuntu host name
+ubuntu@ubuntu:~$ echo $ is just user, root is super user.
+$ is just user, root is super user.
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ SHELL
+SHELL: command not found
+ubuntu@ubuntu:~$ echo $SHELL
+/bin/bash
+ubuntu@ubuntu:~$ cd
+ubuntu@ubuntu:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu:~$ today =( date'+%d')
+bash: syntax error near unexpected token `('
+ubuntu@ubuntu:~$ #!/bin/ sh
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ % echo $SHELL
+bash: fg: %: no such job
+ubuntu@ubuntu:~$ / % echo $SHELL
+bash: /: Is a directory
+ubuntu@ubuntu:~$ sh
+$ bash
+ubuntu@ubuntu:~$ ~$
+~$: command not found
+ubuntu@ubuntu:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu:~$ ls -al
+total 68
+drwxr-xr-x 16 ubuntu ubuntu 4096 Aug 16 09:29 .
+drwxr-xr-x  3 root   root   4096 Aug 16 09:01 ..
+-rw-------  1 ubuntu ubuntu   95 Aug 17 08:42 .bash_history
+-rw-r--r--  1 ubuntu ubuntu    0 Feb 25  2020 .bash_logout
+-rw-r--r--  1 ubuntu ubuntu    0 Feb 25  2020 .bashrc
+drwx------ 13 ubuntu ubuntu 4096 Aug 16 13:22 .cache
+drwx------ 11 ubuntu ubuntu 4096 Aug 17 08:42 .config
+drwx------  3 ubuntu ubuntu 4096 Aug 16 09:28 .gnupg
+drwxr-xr-x  3 ubuntu ubuntu 4096 Aug 16 09:28 .local
+drwx------  4 ubuntu ubuntu 4096 Aug 16 09:29 .mozilla
+-rw-r--r--  1 ubuntu ubuntu    0 Feb 25  2020 .profile
+drwx------  2 ubuntu ubuntu 4096 Aug 16 09:01 .ssh
+-rw-r--r--  1 ubuntu ubuntu    0 Aug 16 09:02 .sudo_as_admin_successful
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Desktop
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Documents
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Downloads
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Music
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Pictures
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Public
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Templates
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Videos
+ubuntu@ubuntu:~$ exit
+exit
+$  exit
+ubuntu@ubuntu:~$ 
