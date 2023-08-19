@@ -1,0 +1,418 @@
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ kk
+kk: command not found
+ubuntu@ubuntu:~$ ls -al
+total 68
+drwxr-xr-x 16 ubuntu ubuntu 4096 Aug 16 09:29 .
+drwxr-xr-x  3 root   root   4096 Aug 16 09:01 ..
+-rw-------  1 ubuntu ubuntu  338 Aug 18 06:30 .bash_history
+-rw-r--r--  1 ubuntu ubuntu    0 Feb 25  2020 .bash_logout
+-rw-r--r--  1 ubuntu ubuntu    0 Feb 25  2020 .bashrc
+drwx------ 13 ubuntu ubuntu 4096 Aug 16 13:22 .cache
+drwx------ 11 ubuntu ubuntu 4096 Aug 17 08:42 .config
+drwx------  3 ubuntu ubuntu 4096 Aug 16 09:28 .gnupg
+drwxr-xr-x  3 ubuntu ubuntu 4096 Aug 16 09:28 .local
+drwx------  4 ubuntu ubuntu 4096 Aug 16 09:29 .mozilla
+-rw-r--r--  1 ubuntu ubuntu    0 Feb 25  2020 .profile
+drwx------  2 ubuntu ubuntu 4096 Aug 16 09:01 .ssh
+-rw-r--r--  1 ubuntu ubuntu    0 Aug 16 09:02 .sudo_as_admin_successful
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Desktop
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Documents
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Downloads
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Music
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Pictures
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Public
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Templates
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Videos
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ ps -al
+F S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 S  1000    1552    1550  1  80   0 - 196389 ep_pol tty2    00:00:01 Xorg
+0 S  1000    1947    1550  0  80   0 - 46043 do_sys tty2     00:00:00 gnome-sess
+0 R  1000    2624    2425  0  80   0 -  1798 -      pts/0    00:00:00 ps
+ubuntu@ubuntu:~$ ls -al
+total 68
+drwxr-xr-x 16 ubuntu ubuntu 4096 Aug 16 09:29 .
+drwxr-xr-x  3 root   root   4096 Aug 16 09:01 ..
+-rw-------  1 ubuntu ubuntu  338 Aug 18 06:30 .bash_history
+-rw-r--r--  1 ubuntu ubuntu    0 Feb 25  2020 .bash_logout
+-rw-r--r--  1 ubuntu ubuntu    0 Feb 25  2020 .bashrc
+drwx------ 13 ubuntu ubuntu 4096 Aug 16 13:22 .cache
+drwx------ 11 ubuntu ubuntu 4096 Aug 17 08:42 .config
+drwx------  3 ubuntu ubuntu 4096 Aug 16 09:28 .gnupg
+drwxr-xr-x  3 ubuntu ubuntu 4096 Aug 16 09:28 .local
+drwx------  4 ubuntu ubuntu 4096 Aug 16 09:29 .mozilla
+-rw-r--r--  1 ubuntu ubuntu    0 Feb 25  2020 .profile
+drwx------  2 ubuntu ubuntu 4096 Aug 16 09:01 .ssh
+-rw-r--r--  1 ubuntu ubuntu    0 Aug 16 09:02 .sudo_as_admin_successful
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Desktop
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Documents
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Downloads
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Music
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Pictures
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Public
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Templates
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Videos
+ubuntu@ubuntu:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu:~$ cd..
+cd..: command not found
+ubuntu@ubuntu:~$ cd ../
+ubuntu@ubuntu:/home$ cd ../
+ubuntu@ubuntu:/$ pwd
+/
+ubuntu@ubuntu:/$ 
+ubuntu@ubuntu:/$ pwd
+/
+ubuntu@ubuntu:/$ ls -al
+total 4194392
+drwxr-xr-x  20 root root       4096 Aug 16 08:57 .
+drwxr-xr-x  20 root root       4096 Aug 16 08:57 ..
+lrwxrwxrwx   1 root root          7 Aug 31  2022 bin -> usr/bin
+drwxr-xr-x   5 root root       4096 Aug 18 07:03 boot
+dr-xr-xr-x   2 root root       4096 Aug 31  2022 cdrom
+drwxr-xr-x  19 root root       4020 Aug 19 07:45 dev
+drwxr-xr-x 138 root root      12288 Aug 18 07:02 etc
+drwxr-xr-x   3 root root       4096 Aug 16 09:01 home
+lrwxrwxrwx   1 root root          7 Aug 31  2022 lib -> usr/lib
+drwx------   2 root root      16384 Aug 16 08:54 lost+found
+drwxr-xr-x   2 root root       4096 Aug 31  2022 media
+drwxr-xr-x   2 root root       4096 Aug 31  2022 mnt
+drwxr-xr-x   2 root root       4096 Aug 31  2022 opt
+dr-xr-xr-x 265 root root          0 Jan  1  1970 proc
+drwx------   5 root root       4096 Aug 17 08:42 root
+drwxr-xr-x  36 root root        980 Aug 19 07:45 run
+lrwxrwxrwx   1 root root          8 Aug 31  2022 sbin -> usr/sbin
+drwxr-xr-x   6 root root       4096 Aug 31  2022 snap
+drwxr-xr-x   2 root root       4096 Aug 31  2022 srv
+-rw-------   1 root root 4294967296 Aug 16 08:57 swap.img
+dr-xr-xr-x  13 root root          0 Aug 19 07:45 sys
+drwxrwxrwt  19 root root       4096 Aug 19 07:46 tmp
+drwxr-xr-x  11 root root       4096 Aug 31  2022 usr
+drwxr-xr-x  14 root root       4096 Aug 16 09:22 var
+ubuntu@ubuntu:/$ cd home
+ubuntu@ubuntu:/home$ ls -al
+total 12
+drwxr-xr-x  3 root   root   4096 Aug 16 09:01 .
+drwxr-xr-x 20 root   root   4096 Aug 16 08:57 ..
+drwxr-xr-x 16 ubuntu ubuntu 4096 Aug 16 09:29 ubuntu
+ubuntu@ubuntu:/home$ cd ubuntu
+ubuntu@ubuntu:~$ ls -al
+total 68
+drwxr-xr-x 16 ubuntu ubuntu 4096 Aug 16 09:29 .
+drwxr-xr-x  3 root   root   4096 Aug 16 09:01 ..
+-rw-------  1 ubuntu ubuntu  338 Aug 18 06:30 .bash_history
+-rw-r--r--  1 ubuntu ubuntu    0 Feb 25  2020 .bash_logout
+-rw-r--r--  1 ubuntu ubuntu    0 Feb 25  2020 .bashrc
+drwx------ 13 ubuntu ubuntu 4096 Aug 16 13:22 .cache
+drwx------ 11 ubuntu ubuntu 4096 Aug 17 08:42 .config
+drwx------  3 ubuntu ubuntu 4096 Aug 16 09:28 .gnupg
+drwxr-xr-x  3 ubuntu ubuntu 4096 Aug 16 09:28 .local
+drwx------  4 ubuntu ubuntu 4096 Aug 16 09:29 .mozilla
+-rw-r--r--  1 ubuntu ubuntu    0 Feb 25  2020 .profile
+drwx------  2 ubuntu ubuntu 4096 Aug 16 09:01 .ssh
+-rw-r--r--  1 ubuntu ubuntu    0 Aug 16 09:02 .sudo_as_admin_successful
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Desktop
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Documents
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Downloads
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Music
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Pictures
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Public
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Templates
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Videos
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu:~$ cd ..
+ubuntu@ubuntu:/home$ .ubuntu
+.ubuntu: command not found
+ubuntu@ubuntu:/home$ cd ubuntu
+ubuntu@ubuntu:~$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ubuntu@ubuntu:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures	Public	Templates  Videos
+ubuntu@ubuntu:~$ cd
+ubuntu@ubuntu:~$ ls -al
+total 68
+drwxr-xr-x 16 ubuntu ubuntu 4096 Aug 16 09:29 .
+drwxr-xr-x  3 root   root   4096 Aug 16 09:01 ..
+-rw-------  1 ubuntu ubuntu  338 Aug 18 06:30 .bash_history
+-rw-r--r--  1 ubuntu ubuntu    0 Feb 25  2020 .bash_logout
+-rw-r--r--  1 ubuntu ubuntu    0 Feb 25  2020 .bashrc
+drwx------ 13 ubuntu ubuntu 4096 Aug 16 13:22 .cache
+drwx------ 11 ubuntu ubuntu 4096 Aug 17 08:42 .config
+drwx------  3 ubuntu ubuntu 4096 Aug 16 09:28 .gnupg
+drwxr-xr-x  3 ubuntu ubuntu 4096 Aug 16 09:28 .local
+drwx------  4 ubuntu ubuntu 4096 Aug 16 09:29 .mozilla
+-rw-r--r--  1 ubuntu ubuntu    0 Feb 25  2020 .profile
+drwx------  2 ubuntu ubuntu 4096 Aug 16 09:01 .ssh
+-rw-r--r--  1 ubuntu ubuntu    0 Aug 16 09:02 .sudo_as_admin_successful
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Desktop
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Documents
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Downloads
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Music
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Pictures
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Public
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Templates
+drwxr-xr-x  2 ubuntu ubuntu 4096 Aug 16 09:28 Videos
+ubuntu@ubuntu:~$ cd
+ubuntu@ubuntu:~$ cd ..
+ubuntu@ubuntu:/home$ cd ..
+ubuntu@ubuntu:/$ ls
+bin   cdrom  etc   lib	       media  opt   root  sbin	srv	  sys  usr
+boot  dev    home  lost+found  mnt    proc  run   snap	swap.img  tmp  var
+ubuntu@ubuntu:/$ cd usr
+ubuntu@ubuntu:/usr$ ls
+bin  games  include  lib  libexec  local  sbin	share  src
+ubuntu@ubuntu:/usr$ cd games
+ubuntu@ubuntu:/usr/games$ ls
+gnome-mahjongg	gnome-mines  gnome-sudoku  sol
+ubuntu@ubuntu:/usr/games$ cd ..
+ubuntu@ubuntu:/usr$ ls
+bin  games  include  lib  libexec  local  sbin	share  src
+ubuntu@ubuntu:/usr$ cd lib
+ubuntu@ubuntu:/usr/lib$ pwd
+/usr/lib
+ubuntu@ubuntu:/usr/lib$ cd ..
+ubuntu@ubuntu:/usr$ cd../lib
+bash: cd../lib: No such file or directory
+ubuntu@ubuntu:/usr$ cd lib
+ubuntu@ubuntu:/usr/lib$ cd
+ubuntu@ubuntu:~$ cd
+ubuntu@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures	Public	Templates  Videos
+ubuntu@ubuntu:~$ cd
+ubuntu@ubuntu:~$ cd ..
+ubuntu@ubuntu:/home$ cd ..
+ubuntu@ubuntu:/$ pwd
+/
+ubuntu@ubuntu:/$ ls
+bin   cdrom  etc   lib	       media  opt   root  sbin	srv	  sys  usr
+boot  dev    home  lost+found  mnt    proc  run   snap	swap.img  tmp  var
+ubuntu@ubuntu:/$ cd usr/
+ubuntu@ubuntu:/usr$ cd ..
+ubuntu@ubuntu:/$ cd usr/local/
+ubuntu@ubuntu:/usr/local$ cd ~
+ubuntu@ubuntu:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ cd ..
+ubuntu@ubuntu:/home$ pwd
+/home
+ubuntu@ubuntu:/home$ ls
+ubuntu
+ubuntu@ubuntu:/home$ cd ..
+ubuntu@ubuntu:/$ ls /home
+ubuntu
+ubuntu@ubuntu:/$ cd
+ubuntu@ubuntu:~$ cd ..
+ubuntu@ubuntu:/home$ cd ..
+ubuntu@ubuntu:/$ ls / /usr
+/:
+bin   cdrom  etc   lib	       media  opt   root  sbin	srv	  sys  usr
+boot  dev    home  lost+found  mnt    proc  run   snap	swap.img  tmp  var
+
+/usr:
+bin  games  include  lib  libexec  local  sbin	share  src
+ubuntu@ubuntu:/$ ls
+bin   cdrom  etc   lib	       media  opt   root  sbin	srv	  sys  usr
+boot  dev    home  lost+found  mnt    proc  run   snap	swap.img  tmp  var
+ubuntu@ubuntu:/$ 
+ubuntu@ubuntu:/$ 
+ubuntu@ubuntu:/$ ls us*
+bin  games  include  lib  libexec  local  sbin	share  src
+ubuntu@ubuntu:/$ ls *.html
+ls: cannot access '*.html': No such file or directory
+ubuntu@ubuntu:/$ ls ba*
+ls: cannot access 'ba*': No such file or directory
+ubuntu@ubuntu:/$ ls ba??
+ls: cannot access 'ba??': No such file or directory
+ubuntu@ubuntu:/$ ls bo??
+System.map-5.4.0-156-generic  initrd.img-5.4.0-156-generic.dpkg-bak
+config-5.4.0-156-generic      initrd.img.old
+efi			      lost+found
+grub			      vmlinuz
+initrd.img		      vmlinuz-5.4.0-156-generic
+initrd.img-5.4.0-156-generic  vmlinuz.old
+ubuntu@ubuntu:/$ ls
+bin   cdrom  etc   lib	       media  opt   root  sbin	srv	  sys  usr
+boot  dev    home  lost+found  mnt    proc  run   snap	swap.img  tmp  var
+ubuntu@ubuntu:/$ ls ho??
+ubuntu
+ubuntu@ubuntu:/$ ls h*
+ubuntu
+ubuntu@ubuntu:/$ ls m*
+media:
+
+mnt:
+ubuntu@ubuntu:/$ ls me*
+ubuntu@ubuntu:/$ ls de???
+ls: cannot access 'de???': No such file or directory
+ubuntu@ubuntu:/$ cd media
+ubuntu@ubuntu:/media$ ls
+ubuntu@ubuntu:/media$ cd ..
+ubuntu@ubuntu:/$ ls m??
+ubuntu@ubuntu:/$ ls ho??
+ubuntu
+ubuntu@ubuntu:/$ ls -l
+total 4194384
+lrwxrwxrwx   1 root root          7 Aug 31  2022 bin -> usr/bin
+drwxr-xr-x   5 root root       4096 Aug 18 07:03 boot
+dr-xr-xr-x   2 root root       4096 Aug 31  2022 cdrom
+drwxr-xr-x  19 root root       4020 Aug 19 07:45 dev
+drwxr-xr-x 138 root root      12288 Aug 19 07:58 etc
+drwxr-xr-x   3 root root       4096 Aug 16 09:01 home
+lrwxrwxrwx   1 root root          7 Aug 31  2022 lib -> usr/lib
+drwx------   2 root root      16384 Aug 16 08:54 lost+found
+drwxr-xr-x   2 root root       4096 Aug 31  2022 media
+drwxr-xr-x   2 root root       4096 Aug 31  2022 mnt
+drwxr-xr-x   2 root root       4096 Aug 31  2022 opt
+dr-xr-xr-x 257 root root          0 Jan  1  1970 proc
+drwx------   5 root root       4096 Aug 17 08:42 root
+drwxr-xr-x  36 root root       1020 Aug 19 07:58 run
+lrwxrwxrwx   1 root root          8 Aug 31  2022 sbin -> usr/sbin
+drwxr-xr-x   6 root root       4096 Aug 31  2022 snap
+drwxr-xr-x   2 root root       4096 Aug 31  2022 srv
+-rw-------   1 root root 4294967296 Aug 16 08:57 swap.img
+dr-xr-xr-x  13 root root          0 Aug 19 07:45 sys
+drwxrwxrwt  19 root root       4096 Aug 19 07:58 tmp
+drwxr-xr-x  11 root root       4096 Aug 31  2022 usr
+drwxr-xr-x  14 root root       4096 Aug 16 09:22 var
+ubuntu@ubuntu:/$ cd~
+
+Command 'cd~' not found, did you mean:
+
+  command 'cdp' from deb irpas (0.10-7)
+  command 'cdi' from deb cdo (1.9.9~rc1-1)
+  command 'cdo' from deb cdo (1.9.9~rc1-1)
+  command 'cd5' from deb cd5 (0.1-4)
+  command 'cdb' from deb tinycdb (0.78build1)
+  command 'cdw' from deb cdw (0.8.1-1build4)
+
+Try: sudo apt install <deb name>
+
+ubuntu@ubuntu:/$ CD ~
+CD: command not found
+ubuntu@ubuntu:/$ cd ~
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ ls -f
+Videos	  .gnupg		     .cache	.bash_history  Music
+.config   .sudo_as_admin_successful  Public	.bash_logout
+.bashrc   Desktop		     .profile	Pictures
+..	  .local		     Downloads	.ssh
+.mozilla  Documents		     Templates	.
+ubuntu@ubuntu:~$ ls -F
+Desktop/    Downloads/	Pictures/  Templates/
+Documents/  Music/	Public/    Videos/
+ubuntu@ubuntu:~$ ls -a
+.	       .bashrc	.local	  .sudo_as_admin_successful  Music	Videos
+..	       .cache	.mozilla  Desktop		     Pictures
+.bash_history  .config	.profile  Documents		     Public
+.bash_logout   .gnupg	.ssh	  Downloads		     Templates
+ubuntu@ubuntu:~$ ls -a -F
+./	       .cache/	  .profile		     Downloads/  Videos/
+../	       .config/   .ssh/			     Music/
+.bash_history  .gnupg/	  .sudo_as_admin_successful  Pictures/
+.bash_logout   .local/	  Desktop/		     Public/
+.bashrc        .mozilla/  Documents/		     Templates/
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ ls -a -F
+./	       .cache/	  .profile		     Downloads/  Videos/
+../	       .config/   .ssh/			     Music/
+.bash_history  .gnupg/	  .sudo_as_admin_successful  Pictures/
+.bash_logout   .local/	  Desktop/		     Public/
+.bashrc        .mozilla/  Documents/		     Templates/
+ubuntu@ubuntu:~$ ls -a
+.	       .bashrc	.local	  .sudo_as_admin_successful  Music	Videos
+..	       .cache	.mozilla  Desktop		     Pictures
+.bash_history  .config	.profile  Documents		     Public
+.bash_logout   .gnupg	.ssh	  Downloads		     Templates
+ubuntu@ubuntu:~$ ls -aF
+./	       .cache/	  .profile		     Downloads/  Videos/
+../	       .config/   .ssh/			     Music/
+.bash_history  .gnupg/	  .sudo_as_admin_successful  Pictures/
+.bash_logout   .local/	  Desktop/		     Public/
+.bashrc        .mozilla/  Documents/		     Templates/
+ubuntu@ubuntu:~$ ls -w 30
+Desktop    Pictures
+Documents  Public
+Downloads  Templates
+Music	   Videos
+ubuntu@ubuntu:~$ ls -w 2
+Desktop
+Documents
+Downloads
+Music
+Pictures
+Public
+Templates
+Videos
+ubuntu@ubuntu:~$ ls -w 3
+Desktop
+Documents
+Downloads
+Music
+Pictures
+Public
+Templates
+Videos
+ubuntu@ubuntu:~$ ls -w 1
+Desktop
+Documents
+Downloads
+Music
+Pictures
+Public
+Templates
+Videos
+ubuntu@ubuntu:~$ ls -w 10
+Desktop
+Documents
+Downloads
+Music
+Pictures
+Public
+Templates
+Videos
+ubuntu@ubuntu:~$ ls -w 20
+Desktop
+Documents
+Downloads
+Music
+Pictures
+Public
+Templates
+Videos
+ubuntu@ubuntu:~$ ls -w 30
+Desktop    Pictures
+Documents  Public
+Downloads  Templates
+Music	   Videos
+ubuntu@ubuntu:~$ 
