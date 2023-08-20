@@ -1,0 +1,216 @@
+ubuntu@ubuntu:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu:~$ mkdir report
+ubuntu@ubuntu:~$ ls -f
+Videos	 .mozilla		    Documents  work	      Pictures
+report	 .gnupg			    .cache     .lesshst       .ssh
+.config  .sudo_as_admin_successful  Public     Templates      .
+.bashrc  Desktop		    .profile   .bash_history  Music
+..	 .local			    Downloads  .bash_logout
+ubuntu@ubuntu:~$ ls _F
+ls: cannot access '_F': No such file or directory
+ubuntu@ubuntu:~$ ls -F
+Desktop/    Downloads/	Pictures/  Templates/  report/
+Documents/  Music/	Public/    Videos/     work/
+ubuntu@ubuntu:~$ rm -i report
+rm: cannot remove 'report': Is a directory
+ubuntu@ubuntu:~$ rm -r -i report
+rm: remove directory 'report'? y
+ubuntu@ubuntu:~$ y
+y: command not found
+ubuntu@ubuntu:~$ ls -F
+Desktop/    Downloads/	Pictures/  Templates/  work/
+Documents/  Music/	Public/    Videos/
+ubuntu@ubuntu:~$ cd work
+ubuntu@ubuntu:~/work$ cp file1 file2
+ubuntu@ubuntu:~/work$ 
+ubuntu@ubuntu:~/work$ cat etc/crontab
+cat: etc/crontab: No such file or directory
+ubuntu@ubuntu:~/work$ cat /etc/crontab
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+ubuntu@ubuntu:~/work$ cat -n /etc/crontab
+     1	# /etc/crontab: system-wide crontab
+     2	# Unlike any other crontab you don't have to run the `crontab'
+     3	# command to install the new version when you edit this file
+     4	# and files in /etc/cron.d. These files also have username fields,
+     5	# that none of the other crontabs do.
+     6	
+     7	SHELL=/bin/sh
+     8	PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+     9	
+    10	# Example of job definition:
+    11	# .---------------- minute (0 - 59)
+    12	# |  .------------- hour (0 - 23)
+    13	# |  |  .---------- day of month (1 - 31)
+    14	# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+    15	# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+    16	# |  |  |  |  |
+    17	# *  *  *  *  * user-name command to be executed
+    18	17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+    19	25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+    20	47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+    21	52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+    22	#
+ubuntu@ubuntu:~/work$ 
+ubuntu@ubuntu:~/work$ 
+ubuntu@ubuntu:~/work$ cp file1 dir1
+ubuntu@ubuntu:~/work$ ls dir1
+dir1
+ubuntu@ubuntu:~/work$ touch file3
+ubuntu@ubuntu:~/work$ mkdir dir2
+ubuntu@ubuntu:~/work$ cp file1 fiel2 file3 dir2
+cp: cannot stat 'fiel2': No such file or directory
+ubuntu@ubuntu:~/work$ touch file3
+ubuntu@ubuntu:~/work$ cp file1 fiel2 file3 dir2
+cp: cannot stat 'fiel2': No such file or directory
+ubuntu@ubuntu:~/work$ cp file1 file2 file3 dir2
+ubuntu@ubuntu:~/work$ cp -i file1 file2 file3 dir2
+cp: overwrite 'dir2/file1'? y
+cp: overwrite 'dir2/file2'? y
+cp: overwrite 'dir2/file3'? y
+ubuntu@ubuntu:~/work$ cp -r dir2 dir3
+ubuntu@ubuntu:~/work$ mkdir mkdir mvtest
+ubuntu@ubuntu:~/work$ cd mvtest
+ubuntu@ubuntu:~/work/mvtest$ touch file1
+ubuntu@ubuntu:~/work/mvtest$ mv file1 file2
+ubuntu@ubuntu:~/work/mvtest$ ls file2
+file2
+ubuntu@ubuntu:~/work/mvtest$ ls -a
+.  ..  file2
+ubuntu@ubuntu:~/work/mvtest$ ls -F
+file2
+ubuntu@ubuntu:~/work/mvtest$ mv file1 dir1
+mv: cannot stat 'file1': No such file or directory
+ubuntu@ubuntu:~/work/mvtest$ touch file1
+ubuntu@ubuntu:~/work/mvtest$ mv file1 dir1
+ubuntu@ubuntu:~/work/mvtest$ mkdir dir1
+mkdir: cannot create directory ‘dir1’: File exists
+ubuntu@ubuntu:~/work/mvtest$ touch file1
+ubuntu@ubuntu:~/work/mvtest$ touch file3
+ubuntu@ubuntu:~/work/mvtest$ mv file1 file2 file3 dir1
+mv: target 'dir1' is not a directory
+ubuntu@ubuntu:~/work/mvtest$ mkdir dir1
+mkdir: cannot create directory ‘dir1’: File exists
+ubuntu@ubuntu:~/work/mvtest$ rm dir1
+ubuntu@ubuntu:~/work/mvtest$ mkdir dir1
+ubuntu@ubuntu:~/work/mvtest$ mv file1 file2 file3 dir1
+ubuntu@ubuntu:~/work/mvtest$ ls dir1
+file1  file2  file3
+ubuntu@ubuntu:~/work/mvtest$ cp /etc/crontab file1
+ubuntu@ubuntu:~/work/mvtest$ ls
+dir1  file1
+ubuntu@ubuntu:~/work/mvtest$ ln file1 file2
+ubuntu@ubuntu:~/work/mvtest$ ls
+dir1  file1  file2
+ubuntu@ubuntu:~/work/mvtest$ cat file2
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+ubuntu@ubuntu:~/work/mvtest$ rm file1
+ubuntu@ubuntu:~/work/mvtest$ ls
+dir1  file2
+ubuntu@ubuntu:~/work/mvtest$ cat file2
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+ubuntu@ubuntu:~/work/mvtest$ rm file2
+ubuntu@ubuntu:~/work/mvtest$ ls
+dir1
+ubuntu@ubuntu:~/work/mvtest$ cp /etc/cr
+cracklib/             cron.hourly/          crontab
+cron.d/               cron.monthly/         cryptsetup-initramfs/
+cron.daily/           cron.weekly/          crypttab
+ubuntu@ubuntu:~/work/mvtest$ cp /etc/crontab file1
+ubuntu@ubuntu:~/work/mvtest$ ln -s file1 file2
+ubuntu@ubuntu:~/work/mvtest$ ls -l
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Aug 20 07:24 dir1
+-rw-r--r-- 1 ubuntu ubuntu 1042 Aug 20 07:34 file1
+lrwxrwxrwx 1 ubuntu ubuntu    5 Aug 20 07:34 file2 -> file1
+ubuntu@ubuntu:~/work/mvtest$ cat fiel2
+cat: fiel2: No such file or directory
+ubuntu@ubuntu:~/work/mvtest$ cat file1
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+ubuntu@ubuntu:~/work/mvtest$ ln -s file1 file2
+ln: failed to create symbolic link 'file2': File exists
+ubuntu@ubuntu:~/work/mvtest$ 
