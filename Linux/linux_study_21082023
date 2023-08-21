@@ -1,0 +1,33 @@
+find . -name file-1.txt -print
+mkdir -p dir1/doc
+touch file-1.txt dir1/doc/file-1.txt
+find . -name file-1.txt -print
+
+find . -type d print
+
+locate --version
+
+sudo apt-get install mlocate
+
+locate bash
+
+locate '*.sed'
+
+locate -i notes
+
+locate -b python
+
+locate docs documnet
+
+locate -A bash doc
+
+cat --help
+
+man cat
+
+man -k mkdir
+
+ls -lf /bin/cat
+
+echo $PATH
+
