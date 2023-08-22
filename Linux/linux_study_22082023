@@ -1,0 +1,147 @@
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ cat /etc/crontab
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+ubuntu@ubuntu:~$ vim --version
+VIM - Vi IMproved 8.1 (2018 May 18, compiled Aug 01 2023 08:30:18)
+Included patches: 1-2269, 3612, 3625, 3669, 3741
+Modified by team+vim@tracker.debian.org
+Compiled by team+vim@tracker.debian.org
+Huge version without GUI.  Features included (+) or not (-):
++acl               -farsi             -mouse_sysmouse    -tag_any_white
++arabic            +file_in_path      +mouse_urxvt       -tcl
++autocmd           +find_in_path      +mouse_xterm       +termguicolors
++autochdir         +float             +multi_byte        +terminal
+-autoservername    +folding           +multi_lang        +terminfo
+-balloon_eval      -footer            -mzscheme          +termresponse
++balloon_eval_term +fork()            +netbeans_intg     +textobjects
+-browse            +gettext           +num64             +textprop
+++builtin_terms    -hangul_input      +packages          +timers
++byte_offset       +iconv             +path_extra        +title
++channel           +insert_expand     -perl              -toolbar
++cindent           +job               +persistent_undo   +user_commands
+-clientserver      +jumplist          +postscript        +vartabs
+-clipboard         +keymap            +printer           +vertsplit
++cmdline_compl     +lambda            +profile           +virtualedit
++cmdline_hist      +langmap           -python            +visual
++cmdline_info      +libcall           +python3           +visualextra
++comments          +linebreak         +quickfix          +viminfo
++conceal           +lispindent        +reltime           +vreplace
++cryptv            +listcmds          +rightleft         +wildignore
++cscope            +localmap          -ruby              +wildmenu
++cursorbind        -lua               +scrollbind        +windows
++cursorshape       +menu              +signs             +writebackup
++dialog_con        +mksession         +smartindent       -X11
++diff              +modify_fname      +sound             -xfontset
++digraphs          +mouse             +spell             -xim
+-dnd               -mouseshape        +startuptime       -xpm
+-ebcdic            +mouse_dec         +statusline        -xsmp
++emacs_tags        +mouse_gpm         -sun_workshop      -xterm_clipboard
++eval              -mouse_jsbterm     +syntax            -xterm_save
++ex_extra          +mouse_netterm     +tag_binary        
++extra_search      +mouse_sgr         -tag_old_static    
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+       defaults file: "$VIMRUNTIME/defaults.vim"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H   -Wdate-time  -g -O2 -fdebug-prefix-map=/build/vim-T3n4WB/vim-8.1.2269=. -fstack-protector-strong -Wformat -Werror=format-security -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1       
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lcanberra -lacl -lattr -lgpm -ldl     -L/usr/lib/python3.8/config-3.8-aarch64-linux-gnu -lpython3.8 -lcrypt -lpthread -ldl -lutil -lm -lm      
+ubuntu@ubuntu:~$ apt-get install vim
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+ubuntu@ubuntu:~$ y
+y: command not found
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ sudo apt-get install vim
+[sudo] password for ubuntu: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+vim is already the newest version (2:8.1.2269-1ubuntu5.16).
+vim set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 47 not upgraded.
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ vi
+ubuntu@ubuntu:~$ vim newfile1.txt
+ubuntu@ubuntu:~$ ls
+Desktop    Downloads  Pictures	Templates  dir1		 work
+Documents  Music      Public	Videos	   newfile1.txt
+ubuntu@ubuntu:~$ vi
+ubuntu@ubuntu:~$ ls
+Desktop    Downloads  Pictures	Templates  dir1		 test
+Documents  Music      Public	Videos	   newfile1.txt  work
+ubuntu@ubuntu:~$ rm -i test
+rm: remove regular empty file 'test'? y
+ubuntu@ubuntu:~$ ls
+Desktop    Downloads  Pictures	Templates  dir1		 work
+Documents  Music      Public	Videos	   newfile1.txt
+ubuntu@ubuntu:~$ vi
+ubuntu@ubuntu:~$ cp /etc/crontab
+cp: missing destination file operand after '/etc/crontab'
+Try 'cp --help' for more information.
+ubuntu@ubuntu:~$ vim crontab
+ubuntu@ubuntu:~$ ls
+Desktop    Downloads  Pictures	Templates  dir1		 work
+Documents  Music      Public	Videos	   newfile1.txt
+ubuntu@ubuntu:~$ cp /etc/crontab .
+ubuntu@ubuntu:~$ vim corntab
+ubuntu@ubuntu:~$ Example of job definition:
+Example: command not found
+ubuntu@ubuntu:~$ vim crontab
+ubuntu@ubuntu:~$ vim crontab
+ubuntu@ubuntu:~$ vim crontab
+ubuntu@ubuntu:~$ vim crontab
+ubuntu@ubuntu:~$ vim crontab
+ubuntu@ubuntu:~$ vimtutor
+ubuntu@ubuntu:~$ vimtutor
+ubuntu@ubuntu:~$ ls
+Desktop    Downloads  Pictures	Templates  crontab  newfile1.txt
+Documents  Music      Public	Videos	   dir1     work
+ubuntu@ubuntu:~$ 
+
+
+shortcut
+Vim(vi)
+:q [enter]
+Hjkl
+W, b
+0,$
+Gg(소문자)
+G
+D$
+D0
+X
+Dw
+P
+Yy
+Dd
+Ctrl+r
+/<문자열>아래로
+?/<문자열>위로
+N
+N
