@@ -1,0 +1,258 @@
+ubuntu@ubuntu:~$ l
+l: command not found
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ ls -F
+Desktop/    Downloads/	Pictures/  Templates/  crontab	newfile1.txt
+Documents/  Music/	Public/    Videos/     dir1/	work/
+ubuntu@ubuntu:~$ alis ls = 'ls -F'
+
+Command 'alis' not found, did you mean:
+
+  command 'aris' from snap aris (2.2)
+  command 'ali' from deb mailutils-mh (1:3.7-2.1)
+  command 'ali' from deb mmh (0.4-2)
+  command 'ali' from deb nmh (1.7.1-6)
+  command 'als' from deb atool (0.39.0-10)
+
+See 'snap info <snapname>' for additional versions.
+
+ubuntu@ubuntu:~$ ls
+Desktop    Downloads  Pictures	Templates  crontab  newfile1.txt
+Documents  Music      Public	Videos	   dir1     work
+ubuntu@ubuntu:~$ alias ls ='ls -F'
+bash: alias: ls: not found
+bash: alias: =ls -F: not found
+ubuntu@ubuntu:~$ ls
+Desktop    Downloads  Pictures	Templates  crontab  newfile1.txt
+Documents  Music      Public	Videos	   dir1     work
+ubuntu@ubuntu:~$ alias la='ls -a'
+ubuntu@ubuntu:~$ alias ll='ls -l'
+ubuntu@ubuntu:~$ alias rm='rm -i'
+ubuntu@ubuntu:~$ alias cp='cp -i'
+ubuntu@ubuntu:~$ alias mv='mv -i'
+ubuntu@ubuntu:~$ type ls
+ls is hashed (/usr/bin/ls)
+ubuntu@ubuntu:~$ type cp
+cp is aliased to `cp -i'
+ubuntu@ubuntu:~$ /bin/ls
+Desktop    Downloads  Pictures	Templates  crontab  newfile1.txt
+Documents  Music      Public	Videos	   dir1     work
+ubuntu@ubuntu:~$ command ls
+Desktop    Downloads  Pictures	Templates  crontab  newfile1.txt
+Documents  Music      Public	Videos	   dir1     work
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ set -0
+bash: set: -0: invalid option
+set: usage: set [-abefhkmnptuvxBCHP] [-o option-name] [--] [arg ...]
+ubuntu@ubuntu:~$ set -o
+allexport      	off
+braceexpand    	on
+emacs          	on
+errexit        	off
+errtrace       	off
+functrace      	off
+hashall        	on
+histexpand     	on
+history        	on
+ignoreeof      	off
+interactive-comments	on
+keyword        	off
+monitor        	on
+noclobber      	off
+noexec         	off
+noglob         	off
+nolog          	off
+notify         	off
+nounset        	off
+onecmd         	off
+physical       	off
+pipefail       	off
+posix          	off
+privileged     	off
+verbose        	off
+vi             	off
+xtrace         	off
+ubuntu@ubuntu:~$ set -o ignoreeof
+ubuntu@ubuntu:~$ Use "exit" to leave the shell.
+ubuntu@ubuntu:~$ Use "exit" to leave the shell.
+ubuntu@ubuntu:~$ shopt -s
+checkwinsize   	on
+cmdhist        	on
+complete_fullquote	on
+expand_aliases 	on
+extquote       	on
+force_fignore  	on
+globasciiranges	on
+hostcomplete   	on
+interactive_comments	on
+progcomp       	on
+promptvars     	on
+sourcepath     	on
+ubuntu@ubuntu:~$ shopt -u
+autocd         	off
+assoc_expand_once	off
+cdable_vars    	off
+cdspell        	off
+checkhash      	off
+checkjobs      	off
+compat31       	off
+compat32       	off
+compat40       	off
+compat41       	off
+compat42       	off
+compat43       	off
+compat44       	off
+direxpand      	off
+dirspell       	off
+dotglob        	off
+execfail       	off
+extdebug       	off
+extglob        	off
+failglob       	off
+globstar       	off
+gnu_errfmt     	off
+histappend     	off
+histreedit     	off
+histverify     	off
+huponexit      	off
+inherit_errexit	off
+lastpipe       	off
+lithist        	off
+localvar_inherit	off
+localvar_unset 	off
+login_shell    	off
+mailwarn       	off
+no_empty_cmd_completion	off
+nocaseglob     	off
+nocasematch    	off
+nullglob       	off
+progcomp_alias 	off
+restricted_shell	off
+shift_verbose  	off
+xpg_echo       	off
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ adtocd
+adtocd: command not found
+ubuntu@ubuntu:~$ shopt -s cdspell
+ubuntu@ubuntu:~$ shopt -s cdspell
+ubuntu@ubuntu:~$ ls -f
+Videos	      .mozilla			 .cache     Templates	   .viminfo
+newfile1.txt  .gnupg			 Public     .bash_history  .
+.config       .sudo_as_admin_successful  .profile   .bash_logout   Music
+.bashrc       Desktop			 Downloads  dir1
+crontab       .local			 work	    Pictures
+..	      Documents			 .lesshst   .ssh
+ubuntu@ubuntu:~$ ls
+Desktop    Downloads  Pictures	Templates  crontab  newfile1.txt
+Documents  Music      Public	Videos	   dir1     work
+ubuntu@ubuntu:~$ ls -F
+Desktop/    Downloads/	Pictures/  Templates/  crontab	newfile1.txt
+Documents/  Music/	Public/    Videos/     dir1/	work/
+ubuntu@ubuntu:~$ cd mediaa
+bash: cd: mediaa: No such file or directory
+ubuntu@ubuntu:~$ shopt -s
+cdspell        	on
+checkwinsize   	on
+cmdhist        	on
+complete_fullquote	on
+expand_aliases 	on
+extquote       	on
+force_fignore  	on
+globasciiranges	on
+hostcomplete   	on
+interactive_comments	on
+progcomp       	on
+promptvars     	on
+sourcepath     	on
+ubuntu@ubuntu:~$ cd mediaa
+bash: cd: mediaa: No such file or directory
+ubuntu@ubuntu:~$ shopt -s cdspell
+ubuntu@ubuntu:~$ cd mediaa
+bash: cd: mediaa: No such file or directory
+ubuntu@ubuntu:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu:~$ var1='test variable'
+ubuntu@ubuntu:~$ echo $var1
+test variable
+ubuntu@ubuntu:~$ echo hello
+hello
+ubuntu@ubuntu:~$ PS1='bash> '
+bash> 
+bash> 
+bash> cd ..
+bash> :q
+:q: command not found
+bash> ^C
+bash> ^C
+bash> Use "exit" to leave the shell.
+bash> cd ..
+bash> cd ../..
+bash> pwd
+/
+bash> ls -F
+bin@	dev/   lib@	    mnt/   root/  snap/     sys/  var/
+boot/	etc/   lost+found/  opt/   run/   srv/	    tmp/
+cdrom/	home/  media/	    proc/  sbin@  swap.img  usr/
+bash> l
+l: command not found
+bash> 
+bash> 
+bash> 
+bash> cd home
+bash> cd /home/
+bash> pwd
+/home
+bash> d
+d: command not found
+bash> \d
+d: command not found
+bash> PS1='[\u] \w \$'
+[ubuntu] /home $~$
+~$: command not found
+[ubuntu] /home $ cd /usr/local
+[ubuntu] /usr/local $\d
+d: command not found
+[ubuntu] /usr/local $\h
+h: command not found
+[ubuntu] /usr/local $
+
+
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ \d
+d: command not found
+ubuntu@ubuntu:~$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+ubuntu@ubuntu:~$ PATH="$PATH:~/bin"
+ubuntu@ubuntu:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu:~$ cmd1
+cmd1: command not found
+ubuntu@ubuntu:~$ echo $LANG
+C.UTF-8
+ubuntu@ubuntu:~$ locale -a
+C
+C.UTF-8
+POSIX
+ubuntu@ubuntu:~$ $HOME/report
+bash: /home/ubuntu/report: No such file or directory
+ubuntu@ubuntu:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu:~$ $HOME/work
+bash: /home/ubuntu/work: Is a directory
+ubuntu@ubuntu:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu:~$ type set
+set is a shell builtin
+ubuntu@ubuntu:~$ type cp
+cp is /usr/bin/cp
+ubuntu@ubuntu:~$ source ~/.bashrc
+ubuntu@ubuntu:~$ export PATH="$PATH:$HOME/bin"
+ubuntu@ubuntu:~$ if [ -f ~/.bashrc ]; then
+> source ~/.bashrc
+> fi
+ubuntu@ubuntu:~$ 
+
+
