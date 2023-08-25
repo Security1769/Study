@@ -1,0 +1,211 @@
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ 
+ubuntu@ubuntu:~$ ls -l /bin/cat
+-rwxr-xr-x 1 root root 35080 Sep  5  2019 /bin/cat
+ubuntu@ubuntu:~$ touch testfile1
+ubuntu@ubuntu:~$ ls -l testfile1
+-rw-rw-r-- 1 ubuntu ubuntu 0 Aug 25 10:13 testfile1
+ubuntu@ubuntu:~$ groups
+ubuntu adm cdrom sudo dip plugdev lxd
+ubuntu@ubuntu:~$ groups
+ubuntu adm cdrom sudo dip plugdev lxd
+ubuntu@ubuntu:~$ ls -l /bin/cat
+-rwxr-xr-x 1 root root 35080 Sep  5  2019 /bin/cat
+ubuntu@ubuntu:~$ ls -l /etc/crontab
+-rw-r--r-- 1 root root 1042 Feb 13  2020 /etc/crontab
+ubuntu@ubuntu:~$ /etc/crontab
+bash: /etc/crontab: Permission denied
+ubuntu@ubuntu:~$ ls -ld dir1
+drwxrwxr-x 3 ubuntu ubuntu 4096 Aug 21 09:19 dir1
+ubuntu@ubuntu:~$ ls -ld dir2
+ls: cannot access 'dir2': No such file or directory
+ubuntu@ubuntu:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu:~$ cd ..
+ubuntu@ubuntu:/home$ ls -ld dir2
+ls: cannot access 'dir2': No such file or directory
+ubuntu@ubuntu:/home$ cd ..
+ubuntu@ubuntu:/$ cd ..
+ubuntu@ubuntu:/$ ls -ld dir2
+ls: cannot access 'dir2': No such file or directory
+ubuntu@ubuntu:/$ sudo ls -ld dir2
+[sudo] password for ubuntu: 
+ls: cannot access 'dir2': No such file or directory
+ubuntu@ubuntu:/$ ls -ld dir1
+ls: cannot access 'dir1': No such file or directory
+ubuntu@ubuntu:/$ sudo ls -ld dir1
+ls: cannot access 'dir1': No such file or directory
+ubuntu@ubuntu:/$ ls -ld testfile1
+ls: cannot access 'testfile1': No such file or directory
+ubuntu@ubuntu:/$ sudo ls -ld testfile1
+ls: cannot access 'testfile1': No such file or directory
+ubuntu@ubuntu:/$ pwd
+/
+ubuntu@ubuntu:/$ cd ../home/ubuntu/
+ubuntu@ubuntu:~$ ls -ld testfile1
+-rw-rw-r-- 1 ubuntu ubuntu 0 Aug 25 10:13 testfile1
+ubuntu@ubuntu:~$ ls dir2
+ls: cannot access 'dir2': No such file or directory
+ubuntu@ubuntu:~$ chmod g+w file.text
+chmod: cannot access 'file.text': No such file or directory
+ubuntu@ubuntu:~$ chmod u+w file.txt
+chmod: cannot access 'file.txt': No such file or directory
+ubuntu@ubuntu:~$ chmod 755 file.txt
+chmod: cannot access 'file.txt': No such file or directory
+ubuntu@ubuntu:~$ sudo passwd root
+New password: 
+Retype new password: 
+passwd: password updated successfully
+ubuntu@ubuntu:~$ login: osumi
+
+Command 'login:' not found, did you mean:
+
+  command 'login' from deb login (1:4.8.1-1ubuntu5.20.04.4)
+
+Try: sudo apt install <deb name>
+
+ubuntu@ubuntu:~$ su
+Password: 
+root@ubuntu:/home/ubuntu# exit
+exit
+ubuntu@ubuntu:~$ su -
+Password: 
+root@ubuntu:~# 
+root@ubuntu:~# 
+root@ubuntu:~# cat /etc/shadow
+root:$6$jPM.3wpW05rR90X1$xW.SIWEfQEz67.r.uOZQC73NSoc772oNCsJl6ofixYSO5X6D/ifB78HnQLYGsBL4NALeFPl.OKx3FHxuZCo5s.:19594:0:99999:7:::
+daemon:*:19235:0:99999:7:::
+bin:*:19235:0:99999:7:::
+sys:*:19235:0:99999:7:::
+sync:*:19235:0:99999:7:::
+games:*:19235:0:99999:7:::
+man:*:19235:0:99999:7:::
+lp:*:19235:0:99999:7:::
+mail:*:19235:0:99999:7:::
+news:*:19235:0:99999:7:::
+uucp:*:19235:0:99999:7:::
+proxy:*:19235:0:99999:7:::
+www-data:*:19235:0:99999:7:::
+backup:*:19235:0:99999:7:::
+list:*:19235:0:99999:7:::
+irc:*:19235:0:99999:7:::
+gnats:*:19235:0:99999:7:::
+nobody:*:19235:0:99999:7:::
+systemd-network:*:19235:0:99999:7:::
+systemd-resolve:*:19235:0:99999:7:::
+systemd-timesync:*:19235:0:99999:7:::
+messagebus:*:19235:0:99999:7:::
+syslog:*:19235:0:99999:7:::
+_apt:*:19235:0:99999:7:::
+tss:*:19235:0:99999:7:::
+uuidd:*:19235:0:99999:7:::
+tcpdump:*:19235:0:99999:7:::
+landscape:*:19235:0:99999:7:::
+pollinate:*:19235:0:99999:7:::
+systemd-coredump:!!:19585::::::
+ubuntu:$6$B.rcDyadklPQXP/w$Q9cvojdGP1ZpOB7Cr5WuJGPD2.EjD3hSJ2iL5BBuZrgGM1vIqfjO4MlrtntJQDRLp2pQkDsON6g6hguBg54x61:19585:0:99999:7:::
+lxd:!:19585::::::
+rtkit:*:19585:0:99999:7:::
+kernoops:*:19585:0:99999:7:::
+whoopsie:*:19585:0:99999:7:::
+dnsmasq:*:19585:0:99999:7:::
+avahi-autoipd:*:19585:0:99999:7:::
+usbmux:*:19585:0:99999:7:::
+avahi:*:19585:0:99999:7:::
+cups-pk-helper:*:19585:0:99999:7:::
+nm-openvpn:*:19585:0:99999:7:::
+pulse:*:19585:0:99999:7:::
+speech-dispatcher:!:19585:0:99999:7:::
+geoclue:*:19585:0:99999:7:::
+saned:*:19585:0:99999:7:::
+hplip:*:19585:0:99999:7:::
+colord:*:19585:0:99999:7:::
+gnome-initial-setup:*:19585:0:99999:7:::
+gdm:*:19585:0:99999:7:::
+root@ubuntu:~# 
+root@ubuntu:~# 
+root@ubuntu:~# sudo cat /etc/shadow
+root:$6$jPM.3wpW05rR90X1$xW.SIWEfQEz67.r.uOZQC73NSoc772oNCsJl6ofixYSO5X6D/ifB78HnQLYGsBL4NALeFPl.OKx3FHxuZCo5s.:19594:0:99999:7:::
+daemon:*:19235:0:99999:7:::
+bin:*:19235:0:99999:7:::
+sys:*:19235:0:99999:7:::
+sync:*:19235:0:99999:7:::
+games:*:19235:0:99999:7:::
+man:*:19235:0:99999:7:::
+lp:*:19235:0:99999:7:::
+mail:*:19235:0:99999:7:::
+news:*:19235:0:99999:7:::
+uucp:*:19235:0:99999:7:::
+proxy:*:19235:0:99999:7:::
+www-data:*:19235:0:99999:7:::
+backup:*:19235:0:99999:7:::
+list:*:19235:0:99999:7:::
+irc:*:19235:0:99999:7:::
+gnats:*:19235:0:99999:7:::
+nobody:*:19235:0:99999:7:::
+systemd-network:*:19235:0:99999:7:::
+systemd-resolve:*:19235:0:99999:7:::
+systemd-timesync:*:19235:0:99999:7:::
+messagebus:*:19235:0:99999:7:::
+syslog:*:19235:0:99999:7:::
+_apt:*:19235:0:99999:7:::
+tss:*:19235:0:99999:7:::
+uuidd:*:19235:0:99999:7:::
+tcpdump:*:19235:0:99999:7:::
+landscape:*:19235:0:99999:7:::
+pollinate:*:19235:0:99999:7:::
+systemd-coredump:!!:19585::::::
+ubuntu:$6$B.rcDyadklPQXP/w$Q9cvojdGP1ZpOB7Cr5WuJGPD2.EjD3hSJ2iL5BBuZrgGM1vIqfjO4MlrtntJQDRLp2pQkDsON6g6hguBg54x61:19585:0:99999:7:::
+lxd:!:19585::::::
+rtkit:*:19585:0:99999:7:::
+kernoops:*:19585:0:99999:7:::
+whoopsie:*:19585:0:99999:7:::
+dnsmasq:*:19585:0:99999:7:::
+avahi-autoipd:*:19585:0:99999:7:::
+usbmux:*:19585:0:99999:7:::
+avahi:*:19585:0:99999:7:::
+cups-pk-helper:*:19585:0:99999:7:::
+nm-openvpn:*:19585:0:99999:7:::
+pulse:*:19585:0:99999:7:::
+speech-dispatcher:!:19585:0:99999:7:::
+geoclue:*:19585:0:99999:7:::
+saned:*:19585:0:99999:7:::
+hplip:*:19585:0:99999:7:::
+colord:*:19585:0:99999:7:::
+gnome-initial-setup:*:19585:0:99999:7:::
+gdm:*:19585:0:99999:7:::
+root@ubuntu:~# su -
+root@ubuntu:~# su -
+root@ubuntu:~# cat /etc/sudoers
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo	ALL=(ALL:ALL) ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+root@ubuntu:~# sudo visudo
+root@ubuntu:~# 
